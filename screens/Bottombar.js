@@ -104,12 +104,12 @@ const Bottombar = ({ navigation }) => {
 					{bottomTabBarItem({
 						index: 2,
 						icon: Bag,
-						tabName: "Orders",
+						tabName: "Cart",
 					})}
 					{bottomTabBarItem({
 						index: 3,
 						icon: Bell,
-						tabName: "Trends",
+						tabName: "Notifications",
 					})}
 					{bottomTabBarItem({
 						index: 4,

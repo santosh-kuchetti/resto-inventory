@@ -3,7 +3,7 @@ import React from "react";
 import { TouchableOpacity } from "react-native";
 import { Image } from "react-native";
 
-const Options = ({navigation}) => {
+const Options = ({ navigation }) => {
 	return (
 		<View>
 			<View
@@ -19,9 +19,7 @@ const Options = ({navigation}) => {
 						source={require("../../assets/images/inventory.png")}
 					/>
 				</TouchableOpacity>
-				<TouchableOpacity
-					onPress={() => navigation.push("inventory")}
-					style={styles.imageContainer}>
+				<TouchableOpacity style={styles.imageContainer}>
 					<Image
 						style={styles.image}
 						source={require("../../assets/images/discover.png")}
@@ -29,17 +27,13 @@ const Options = ({navigation}) => {
 				</TouchableOpacity>
 			</View>
 			<View style={styles.optionContainer}>
-				<TouchableOpacity
-					onPress={() => navigation.push("inventory")}
-					style={styles.imageContainer}>
+				<TouchableOpacity style={styles.imageContainer}>
 					<Image
 						style={styles.image}
 						source={require("../../assets/images/menu.png")}
 					/>
 				</TouchableOpacity>
-				<TouchableOpacity
-					onPress={() => navigation.push("inventory")}
-					style={styles.imageContainer}>
+				<TouchableOpacity style={styles.imageContainer}>
 					<Image
 						style={styles.image}
 						source={require("../../assets/images/marketing.png")}

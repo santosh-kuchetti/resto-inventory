@@ -6,7 +6,6 @@ import { TextInput } from "react-native";
 import { TouchableWithoutFeedback } from "react-native";
 
 const Create = ({ navigation, categoryData, quantityData }) => {
-	console.log("catData", categoryData, quantityData);
 	const [category, setCategory] = useState("");
 	const [quantity, setQuantity] = useState("");
 	const [showDropdown, setShowDropdown] = useState(false);

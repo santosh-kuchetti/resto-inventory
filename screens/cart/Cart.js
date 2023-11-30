@@ -3,12 +3,18 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <View>
-      <Text>Cart</Text>
-    </View>
-  )
+		<View style={styles.wrapper}>
+			<Text>Cart</Text>
+		</View>
+	);
 }
 
 export default Cart
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+	wrapper: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center",
+	},
+});

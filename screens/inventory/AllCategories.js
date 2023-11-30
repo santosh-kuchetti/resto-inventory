@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import React, { useState } from "react";
+import React from "react";
 import { FlatList } from "react-native";
 import { categories } from "../../constants/Data";
 import { Image } from "react-native";
@@ -13,7 +13,8 @@ const AllCategories = ({ navigation, handleData }) => {
 				onPress={() => {
 					navigation.push("CategoryDetails", {
 						selectedCategoryId: item.id,
-						data: categoryData,
+                        data: categoryData,
+                        handleData: handleData
 					});
 					handleData(item.category, item.items?.length);
 				}}
