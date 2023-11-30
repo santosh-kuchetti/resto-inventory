@@ -1,7 +1,13 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
-
+import { categories } from "../../constants/Data";
 const BottomCart = () => {
+
+    let allItemsCount = categories.reduce(
+			(acc, item) => acc + item.items.length,
+			0
+		);
+
 	return (
 		<View style={styles.bottomContainer}>
 			<View style={styles.wrapper}>
@@ -9,7 +15,7 @@ const BottomCart = () => {
 					<View style={styles.demoView}></View>
 					<View style={{ alignItems: "center" }}>
 						<Text>Total Items</Text>
-						<Text>30</Text>
+                        <Text>{allItemsCount}</Text>
 					</View>
 				</View>
 				<View style={styles.viewCartWrapper}>
